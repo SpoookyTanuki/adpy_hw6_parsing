@@ -22,12 +22,3 @@ for article in soup.find_all('article'):
             href = a.attrs.get('href')
             data: Tag = article.find('span', class_='post__time')
             print(f'{data.text}{title.text}{href}\n')
-
-
-
-
-
-
-# дата
-# заголовок
-# ссылка
